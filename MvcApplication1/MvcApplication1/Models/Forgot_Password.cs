@@ -67,7 +67,7 @@ namespace MvcApplication1.Models
                     client.Port = 587;
                     client.DeliveryMethod = SmtpDeliveryMethod.Network;
                     client.UseDefaultCredentials = false;
-                    System.Net.NetworkCredential credential = new System.Net.NetworkCredential("wepprojectunigoa@outlook.com", "UnigoaWep@123"); //Sender's Email and password
+                    System.Net.NetworkCredential credential = new System.Net.NetworkCredential("wepprojectunigoa@outlook.com", "password"); //Sender's Email and password
                     client.EnableSsl = true;
                     client.Credentials = credential;
                     MailMessage message = new MailMessage("wepprojectunigoa@outlook.com", email); // From and To Email 
